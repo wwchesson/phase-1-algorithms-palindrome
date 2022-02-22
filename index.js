@@ -1,13 +1,24 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let stringToTest = word.split("").reverse().join('');
+  if (word === stringToTest) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /* 
-  Add your pseudocode here
+  separate the individual letters in the word
+  push into an array
+  match first element in array to last? but what about a middle letter?
+  
 */
 
 /*
-  Add written explanation of your solution here
+  string is parameter. 
+  function returns true if the string can be constructed forwards and backwards
+  what tools can make it do that? 
+  not all palidromes are odd, as in abba, though many are
 */
 
 // You can run `node index.js` to view these console logs
